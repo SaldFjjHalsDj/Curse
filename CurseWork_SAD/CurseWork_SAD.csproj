@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{938B207D-813A-41C0-AD54-E5936839813A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CurseWork_SAD</RootNamespace>
+    <AssemblyName>CurseWork_SAD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaliticsCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaliticsCargo.Designer.cs">
+      <DependentUpon>AnaliticsCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Analitics_Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analitics_Drivers.Designer.cs">
+      <DependentUpon>Analitics_Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autorisation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorisation.Designer.cs">
+      <DependentUpon>Autorisation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auto_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auto_Add.Designer.cs">
+      <DependentUpon>Auto_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo_Add.Designer.cs">
+      <DependentUpon>Cargo_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver_Add.Designer.cs">
+      <DependentUpon>Driver_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nakladnay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nakladnay.Designer.cs">
+      <DependentUpon>Nakladnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakladnayNull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakladnayNull.Designer.cs">
+      <DependentUpon>NakladnayNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegNewUserLaw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegNewUserLaw.Designer.cs">
+      <DependentUpon>RegNewUserLaw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegNewUserPhys.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegNewUserPhys.Designer.cs">
+      <DependentUpon>RegNewUserPhys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectType.Designer.cs">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerPart\DB_Object.cs" />
+    <Compile Include="ServerPart\ServerCalls.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaliticsCargo.resx">
+      <DependentUpon>AnaliticsCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Analitics_Drivers.resx">
+      <DependentUpon>Analitics_Drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorisation.resx">
+      <DependentUpon>Autorisation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auto_Add.resx">
+      <DependentUpon>Auto_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo_Add.resx">
+      <DependentUpon>Cargo_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver_Add.resx">
+      <DependentUpon>Driver_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nakladnay.resx">
+      <DependentUpon>Nakladnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakladnayNull.resx">
+      <DependentUpon>NakladnayNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegNewUserLaw.resx">
+      <DependentUpon>RegNewUserLaw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegNewUserPhys.resx">
+      <DependentUpon>RegNewUserPhys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectType.resx">
+      <DependentUpon>SelectType.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
